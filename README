@@ -1,40 +1,43 @@
-Tk::GraphMan version 0.01
+Tk::GraphMan version 0.02
 ========================
 
 Tk::GraphMan creates a scrolling Windows Task Manager style grid/graph chart (new values are added to the right-side of the graph).
 This is a Tk::Canvas widget that has the look and feel of the Windows Task Manager grid/graph chart.
 
-A demonstration script can be found in demo/GraphMan.pl.
-The demo script uses the Win32::SystemInfo::CpuUsage and Win32::SystemInfo modules to graph CPU and memory usage.
-There are some added bells and whistles in the demo script which can be accessed by right-clicking on the graph.  The graph is also draggable.
+Example scripts are located in the examples directory.
+- Tk-GraphMan-Win32_SysInfo.pl uses the Win32::SystemInfo::CpuUsage and Win32::SystemInfo modules to graph CPU and memory usage in a chrome-less window (no title bar)
+                               There are some added bells and whistles which can be accessed by right-clicking on the graph.
+                               The graph is also draggable.
 
-Comments and suggestions are always welcome.
+- Tk-GraphMan-basic_example.pl uses the rand() function to graph random numbers
+
+Comments and suggestions are always welcome ( bcarroll@cpan.org )
 
 INSTALLATION
 
 To install this module type the following:
 
-   	 gunzip -c <dist_file>.tar.gz | tar xvf -
-   	 cd <dist_directory>
-   	 perl Makefile.PL
-   	 make test          
-   	 make install
+     gunzip -c <dist_file>.tar.gz | tar xvf -
+     cd <dist_directory>
+     perl Makefile.PL
+     make test
+     make install
 
-Optionally, manually install the module by copying the GraphMan.pm file to /perl/site/lib/Tk/GraphMan.pm (C:\perl\site\lib\Tk\GraphMan.pm on Windows)
+Optionally, manually install the module by copying the lib/GraphMan.pm file to /perl/site/lib/Tk/GraphMan.pm (C:\perl\site\lib\Tk\GraphMan.pm on Windows)
 
 
 DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-	Tk
+  Tk
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2010 by Brett Carroll
+Copyright (C) 2010-2014 Brett Carroll
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.10.0 or,
+it under the same terms as Perl itself, either Perl version 5.6 or,
 at your option, any later version of Perl 5 you may have available.
 
 

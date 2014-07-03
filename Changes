@@ -1,4 +1,9 @@
 Revision history for Perl extension Tk::GraphMan.
 
 0.01  Wed Jan  6 11:22:48 2010
-	- original version;
+  - original version;
+
+0.02  Wed Jul 2 11:37:23 2014
+  - fixed directory structure to resolve cpan.pl installation errors
+  - fixed Makefile.PL to resolve cpan.pl installation errors
+  - added additional example

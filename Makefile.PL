@@ -1,17 +1,17 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
   (
-   'NAME'	=> 'Tk::GraphMan',
+   'NAME' => 'Tk::GraphMan',
    'VERSION_FROM' => 'GraphMan.pm',
    'dist' => {COMPRESS=>'gzip -9f', SUFFIX => 'gz'},
-   PM            => 
+   PM            =>
    {
-    'TreeGraph.pm'   => '$(INST_LIB)/Tk/GraphMan.pm',
+    'GraphMan.pm'   => '$(INST_LIB)/Tk/GraphMan.pm',
    },
-   PREREQ_PM   => 
+   PREREQ_PM   =>
    {
-    'Tk'	=> '0', 
+    'Tk'  => '0',
    },
-    	AUTHOR => 'Brett Carroll (brettwcarroll@hotmail.com)',
+      AUTHOR => 'Brett Carroll (bcarroll@cpan.org)',
       ABSTRACT => 'Create a Windows Task Manager style scrolling Graph/Chart',
   );
